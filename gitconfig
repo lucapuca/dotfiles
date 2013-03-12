@@ -1,0 +1,19 @@
+[user]
+	name = Luca Pucacco
+	email = luca.pucacco@xpeppers.com
+[push]
+	default = simple
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    dc = diff --cached
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    who = shortlog -s   --
+    aa = add -A
