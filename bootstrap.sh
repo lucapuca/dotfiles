@@ -12,9 +12,9 @@ else
     git clone git://github.com/lucapuca/dotfiles.git $dotfiles
 fi
 
-ln -sfbT bashrc $HOME/.bashrc
-ln -sfbT gitconfig $HOME/.gitconfig
-ln -sfbT git-completion.bash $HOME/.git-completion.bash
-ln -sfbT git-prompt.sh $HOME/.git-prompt.sh
+ln -svfbT bashrc $HOME/.bashrc
+ln -svfbT gitconfig $HOME/.gitconfig
+ln -svfbT git-completion.bash $HOME/.git-completion.bash
+ln -svfbT git-prompt.sh $HOME/.git-prompt.sh
 
 echo "> End <"
