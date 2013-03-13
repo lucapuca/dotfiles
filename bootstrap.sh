@@ -3,8 +3,6 @@
 dotfiles="$HOME/.dotfiles.lup"
 cd $dotfiles
 
-echo "> Installing dotfiles <"
-
 if [ -e $dotfiles ]
 then
     git pull origin master
@@ -16,5 +14,3 @@ ln -svfbT bashrc $HOME/.bashrc
 ln -svfbT gitconfig $HOME/.gitconfig
 ln -svfbT git-completion.bash $HOME/.git-completion.bash
 ln -svfbT git-prompt.sh $HOME/.git-prompt.sh
-
-echo "> End <"
