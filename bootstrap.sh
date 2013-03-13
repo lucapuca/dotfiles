@@ -25,6 +25,7 @@ echo ">> clone repo"
 if [ -e $dotfiles ]
 then
     echo ">>> pull repo"
+    cd $dotfiles
     git pull origin master
 else
     echo ">>> clone repo"
