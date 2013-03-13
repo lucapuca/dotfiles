@@ -1,6 +1,7 @@
 #!/bin/bash
 
 function safeLink {
+    dotfiles="$HOME/.dotfiles.lup"
     fileName=$1
     target=$dotfiles/$fileName
     linkName=$HOME/.$fileName
