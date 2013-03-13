@@ -32,6 +32,7 @@ else
     git clone http://github.com/lucapuca/dotfiles.git $dotfiles
 fi
 
+safeLink "bashrc"
 safeLink "gitconfig"
 safeLink "git-completion.bash"
 safeLink "git-prompt.sh"
