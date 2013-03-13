@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias dotfiles-update='curl https://raw.github.com/lucapuca/dotfiles/master/bootstrap.sh -L -o - | sh'
 #PS1='[\u@\h \W]\$ '
 
 ### GIT PROMPT
