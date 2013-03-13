@@ -24,8 +24,10 @@ echo "> Installing dotfiles <"
 echo ">> clone repo"
 if [ -e $dotfiles ]
 then
+    echo ">>> pull repo"
     git pull origin master
 else
+    echo ">>> clone repo"
     git clone http://github.com/lucapuca/dotfiles.git $dotfiles
 fi
 
