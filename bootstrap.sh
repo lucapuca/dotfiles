@@ -1,40 +1,20 @@
 #!/bin/bash
 
-function safeLink {
-    dotfiles="$HOME/.dotfiles.lup"
-    fileName=$1
-    target=$dotfiles/$fileName
-    linkName=$HOME/.$fileName
-    backup="/tmp/$fileName.`date +%F.%k%M%S`"
-
-    echo ">> linking $fileName to $linkName"
-    if [ -e "$linkName" ]
-    then
-        echo ">>> Moving old $linkName to $backup"
-        mv $linkName $backup
-    fi
-    ln -s $target $linkName
-    echo ""
-}
-
 dotfiles="$HOME/.dotfiles.lup"
+cd $dotfiles
 
 echo "> Installing dotfiles <"
 
-echo ">> clone repo"
 if [ -e $dotfiles ]
 then
-    echo ">>> pull repo"
-    cd $dotfiles
     git pull origin master
 else
-    echo ">>> clone repo"
     git clone git://github.com/lucapuca/dotfiles.git $dotfiles
 fi
 
-safeLink "bashrc"
-safeLink "gitconfig"
-safeLink "git-completion.bash"
-safeLink "git-prompt.sh"
+ln -sfbT bashrc $HOME/.bashrc
+ln -sfbT gitconfig $HOME/.gitconfig
+ln -sfbT git-completion.bash $HOME/.git-completion.bash
+ln -sfbT git-prompt.sh $HOME/.git-prompt.sh
 
-echo "### End ###"
+echo "> End <"
