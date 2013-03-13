@@ -29,7 +29,7 @@ then
     git pull origin master
 else
     echo ">>> clone repo"
-    git clone http://github.com/lucapuca/dotfiles.git $dotfiles
+    git clone git://github.com/lucapuca/dotfiles.git $dotfiles
 fi
 
 safeLink "bashrc"
