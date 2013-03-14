@@ -10,7 +10,7 @@ else
     git clone git://github.com/lucapuca/dotfiles.git $dotfiles
 fi
 
-ln -svfbT bashrc $HOME/.bashrc
-ln -svfbT gitconfig $HOME/.gitconfig
-ln -svfbT git-completion.bash $HOME/.git-completion.bash
-ln -svfbT git-prompt.sh $HOME/.git-prompt.sh
+ln -svfbT $dotfiles/bashrc $HOME/.bashrc
+ln -svfbT $dotfiles/gitconfig $HOME/.gitconfig
+ln -svfbT $dotfiles/git-completion.bash $HOME/.git-completion.bash
+ln -svfbT $dotfiles/git-prompt.sh $HOME/.git-prompt.sh
