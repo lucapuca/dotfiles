@@ -1,8 +1,8 @@
 [user]
-	name = Luca Pucacco
-	email = luca.pucacco@xpeppers.com
+    name = Luca Pucacco
+    email = luca.pucacco@xpeppers.com
 [push]
-	default = simple
+    default = current
 [color]
     branch = auto
     diff = auto
